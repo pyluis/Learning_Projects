@@ -1,3 +1,4 @@
+package JavaProjects;
 
 @SuppressWarnings("unchecked")
 public class DynamicArray<T> implements Iterable<T>{
@@ -21,6 +22,7 @@ public class DynamicArray<T> implements Iterable<T>{
         this.capacity = capacity;
         arr= (T[]) new Object[capacity];
     }
+
     // helper methods 
     public int getSize(){
         return len;
