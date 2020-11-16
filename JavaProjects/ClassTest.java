@@ -3,19 +3,18 @@ package JavaProjects;
 public class ClassTest {
     public static void main(String[] args) {
         
-        DynamicArray a1 = new DynamicArray(5);
-        // test
-        String cap = Integer.toString(a1.getCapacity());
+        Trie t =  new Trie();
 
-        System.out.println(cap);
+        String[] phrases = {"This is Luis", "This is cool","Hi my name is Luis",  "I like cake", "Soccer is awesome", "words are cool"};
 
-        System.out.println(Integer.toString(a1.getSize()));
+        t.insertPhrases(phrases);
 
-        for(int i = 0; i<7;i++)a1.add(i);
-        System.out.println(a1.toString());
+        String body1 = "This is luis";
 
+        boolean response1 = t.search(body1);
 
-        
+        System.out.println(response1);
+
         
     }
 }
