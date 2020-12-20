@@ -55,6 +55,8 @@ public class DoublyLinkedList<T> implements Iterable<T>{
         size++;
     }
 
-    public void addFirst()
+    public void addFirst(){
+        
+    }
 
 }
